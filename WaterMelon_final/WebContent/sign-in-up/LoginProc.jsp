@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" %>
-   <%@ page import="hewon.*"%>
+   <%@ page import="watermelon.accounts.*"%>
  
- <jsp:useBean id="memMgr" class="hewon.MemberDAO" />
+ <jsp:useBean id="memMgr" class="watermelon.MemberDAO" />
 
 <%
      String mem_id=request.getParameter("mem_id");

@@ -22,10 +22,17 @@
  * TO THE SOFTWARE.
  *
  */
+package watermelon.accounts;
 
-package hewon;
-
-import java.sql.*;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.Driver;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.Properties;
 import java.util.Vector;
 
@@ -40,18 +47,23 @@ public class DBConnectionMgr {
     //커넥션풀을 벡터로 구성
 	//private MemberDBMgr mem =null;
     private Vector connections = new Vector(10);
-    /*   MySQL
+    /*   MySQL(p851)  */
+    
+    //(1) 멤버변수 선언
+     private String _driver,_url,_user,_password;
+    /*
 	private String _driver = "org.gjt.mm.mysql.Driver",
-    _url = "jdbc:mysql://127.0.0.1:3306/mydb?useUnicode=true&characterEncoding=EUC_KR",
+    _url = "jdbc:mysql://localhost:3306/mydb?useUnicode=true&characterEncoding=UTF-8",
     _user = "root",
-    _password = "1234"; */
-
+    _password = "1234"; 
+	*/
      //1.드라이버명 2.url(접속경로) 3.접속계정명 4.접속할 암호
+    /*
     private String _driver = "oracle.jdbc.driver.OracleDriver",
     _url = "jdbc:oracle:thin:@localhost:1521:orcl",
     _user = "scott",
     _password = "tiger";
-
+    */
     private boolean _traceOn = false;
     private boolean initialized = false;
 	
@@ -61,15 +73,30 @@ public class DBConnectionMgr {
     //커넥션풀객체를 선언
     private static DBConnectionMgr instance = null;
 
-    public DBConnectionMgr() {
+    //(2)dbmysql.properties파일을 읽어들여서 키->값을 불러오기
+    public DBConnectionMgr()throws IOException {
+    	Properties props=new Properties();
+    	FileInputStream in=new FileInputStream
+    	("C:/webtest/4.jsp/sou/JspBoard2/WebContent/WEB-INF/dbtest/dbmysql.properties");
+    	props.load(in);//파일의 내용 메모리에 불러오기
+    	in.close();
+    	_driver=props.getProperty("jdbc.drivers");
+    	//드라이브만 시스템에 반영
+    	if(_driver!=null) System.setProperty("jdbc.drivers",_driver);
+    	//-------------------------------------------------------------------
+    	_url=props.getProperty("jdbc.url");
+    	_user=props.getProperty("jdbc.username");
+    	_password=props.getProperty("jdbc.password");
+    	System.out.println("_driver=>"+(_driver)+",_url="+(_url));
+    	System.out.println("_user=>"+(_user)+",_password="+(_password));
     }
 
     /** Use this method to set the maximum number of open connections before
      unused connections are closed.
      */
   
-    //커넥션풀을 얻어오는 정적메소드
-    public static DBConnectionMgr getInstance() {
+    //(3)커넥션풀을 얻어오는 정적메소드->예외처리
+    public static DBConnectionMgr getInstance() throws Exception {
         //커넥션풀이 생성이 안되어있다면
 		if (instance == null) {
             synchronized (DBConnectionMgr.class) {
