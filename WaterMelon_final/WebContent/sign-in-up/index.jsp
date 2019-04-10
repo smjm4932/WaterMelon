@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,12 +27,12 @@
 					</ul>
 					<div class="tab-content">
 						<div class="tab-pane fade active in" id="login">
-							<form id="login" method="post" action="LoginProc.jsp">
+							<form id="sign-in" method="post" action="/SignIn.water">
 								<div class="form-group">
 									<label> 아이디<span class="req">*</span>
-									</label> <input type="email" name="mem_id" class="form-control"
-										id="email" required
-										data-validation-required-message="Please enter your email address."
+									</label> <input type="text" name="mem_id" class="form-control"
+										id="text" required
+										data-validation-required-message="아이디를 입력 해 주세요!"
 										autocomplete="off">
 									<p class="help-block text-danger"></p>
 								</div>
@@ -40,7 +40,7 @@
 									<label> 비밀번호<span class="req">*</span>
 									</label> <input type="password" name="mem_passwd" class="form-control"
 										id="password" required
-										data-validation-required-message="Please enter your password"
+										data-validation-required-message="비밀번호를 입력 해 주세요!"
 										autocomplete="off">
 									<p class="help-block text-danger"></p>
 								</div>
@@ -52,10 +52,10 @@
 							</form>
 						</div>
 						<div class="tab-pane fade in" id="signup">
-							<form id="signup">
+							<form id="sign-up" method="post" action="/SignUp.water">
 								<div class="form-group">
 									<label> 아이디<span class="req">*</span>
-									</label> <input type="email" class="form-control" id="id" required
+									</label> <input type="text" class="form-control" id="id" required
 										data-validation-required-message="아이디를 입력 해 주세요!"
 										autocomplete="off">
 									<p class="help-block text-danger"></p>
@@ -64,8 +64,8 @@
 									<div class="col-xs-12 col-sm-6">
 										<div class="form-group">
 											<label> 비밀번호<span class="req">*</span>
-											</label> <input type="text" class="form-control" id="password" required
-												data-validation-required-message="비밀번호를 입력 해 주세요!"
+											</label> <input type="password" class="form-control" id="password"
+												required data-validation-required-message="비밀번호를 입력 해 주세요!"
 												autocomplete="off">
 											<p class="help-block text-danger"></p>
 										</div>
@@ -73,8 +73,8 @@
 									<div class="col-xs-12 col-sm-6">
 										<div class="form-group">
 											<label> 비밀번호 확인<span class="req">*</span>
-											</label> <input type="text" class="form-control" id="password_confirm"
-												required
+											</label> <input type="password" class="form-control"
+												id="password_confirm" required
 												data-validation-required-message="비밀번호를 한번 더 입력 해 주세요!"
 												autocomplete="off">
 											<p class="help-block text-danger"></p>
@@ -83,21 +83,21 @@
 								</div>
 								<div class="form-group">
 									<label> 닉네임<span class="req">*</span>
-									</label> <input type="email" class="form-control" id="nickname"
+									</label> <input type="text" class="form-control" id="nickname"
 										required data-validation-required-message="닉네임을 입력해주세요!"
 										autocomplete="off">
 									<p class="help-block text-danger"></p>
 								</div>
 								<div class="form-group">
 									<label> 이름<span class="req">*</span>
-									</label> <input type="tel" class="form-control" id="name" required
+									</label> <input type="text" class="form-control" id="name" required
 										data-validation-required-message="성함을 입력 해 주세요!"
 										autocomplete="off">
 									<p class="help-block text-danger"></p>
 								</div>
 								<div class="form-group">
 									<label> 이메일<span class="req">*</span>
-									</label> <input type="password" class="form-control" id="email"
+									</label> <input type="email" class="form-control" id="email"
 										required data-validation-required-message="이메일을 입력 해 주세요!"
 										autocomplete="off">
 									<p class="help-block text-danger"></p>
