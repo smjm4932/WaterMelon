@@ -577,7 +577,7 @@
 									<h5 class="user-name text-center">로그인을 해주세요.</h5>
 									<ul class="user-settings-menu list-unstyled">
 										<li><a href="#" class="inactive-color"
-											onclick="location.href='../sign-in-up/index.html'"><span
+											onclick="location.href='/WaterMelon/sign-in-up/Sign.water'"><span
 												class="adonis-icon notification mr-3 icon-3x"><svg
 														version="1.1" xmlns="http://www.w3.org/2000/svg"
 														viewBox="0 0 32 32"> <path
