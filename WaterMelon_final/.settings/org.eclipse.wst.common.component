@@ -4,6 +4,10 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
         <wb-resource deploy-path="/WEB-INF/classes/" source-path="/ImportedClasses"/>
         <property name="java-output-path" value="/WaterMelon_final/build/classes"/>
+<<<<<<< HEAD
         <property name="context-root" value="WaterMelon"/>
+=======
+        <property name="context-root" value="/"/>
+>>>>>>> refs/remotes/origin/develop
     </wb-module>
 </project-modules>
