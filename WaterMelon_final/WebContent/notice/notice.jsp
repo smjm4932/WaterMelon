@@ -19,7 +19,10 @@
   </head>
   <body>
     <div class="container text-center">
-       <h1 class="text">공지사항(전체글:${pgList.count})</h1>
+       <h1 class="text">공지사항</h1>
+   
+    
+  
        <h4 class="text" style="text-align:right; margin-right:30px;"><a href="/WaterMelon/notice_form.water">글쓰기</a></h4>
        <!-- 데이터의 유무 -->
 		
