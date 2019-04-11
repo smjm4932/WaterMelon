@@ -9,14 +9,14 @@
      <servlet-class>controller.ControllerAction</servlet-class>
      <init-param>
          <param-name>propertyConfig</param-name>
-         <param-value>C:/Users/kitcoop/git/WaterMelon/WaterMelon_final/WebContent/WEB-INF/ommandPro.properties</param-value>
+         <param-value>C:/Users/kitcoop/git/WaterMelon/WaterMelon_final/WebContent/WEB-INF/commandPro.properties</param-value>
      </init-param>
   </servlet>
   
   <!--2.어떻게 요청이 들어왔을때 처리할 수있도록 설정(keyword(등록)  -->
   <servlet-mapping>
      <servlet-name>ControllerAction</servlet-name>
-     <url-pattern>*.do</url-pattern>
+     <url-pattern>*.water</url-pattern>
   </servlet-mapping>
   
   <welcome-file-list>
