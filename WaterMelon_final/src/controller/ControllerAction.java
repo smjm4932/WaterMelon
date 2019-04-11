@@ -1,10 +1,20 @@
 package controller;
 
-import java.io.*;//FileInputStream->요청명령어가 등록된 파일을 읽어들이기위해서 
-import java.util.*;//Map,Properties
-import javax.servlet.*;
-import javax.servlet.http.*;
-//추가->다른 패키지의 클래스나 인터페이스를 참조
+//FileInputStream -> 요청명령어가 등록된 파일을 읽어들이기 위해서
+import java.io.FileInputStream;
+import java.io.IOException;
+//Map,Properties
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Properties;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import action.CommandAction;
 
 public class ControllerAction extends HttpServlet {

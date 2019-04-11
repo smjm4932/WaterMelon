@@ -1,0 +1,33 @@
+
+
+
+
+.container {
+	margin-top: 120px;
+}
+
+
+.text{
+	
+	padding:20px;
+	color:#212529;
+	font-weight:bold;
+}
+
+.header {
+	color: #fff;
+  	background: #C7C4FF;
+  	font-size: 18px;
+  	
+}
+
+ a:hover {
+	text-decoration: none;
+}
+
+
+.center:hover {
+  background: #FFD9EC;
+  cursor: pointer;
+} 
+

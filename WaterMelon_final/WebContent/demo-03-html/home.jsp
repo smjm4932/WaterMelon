@@ -6,7 +6,7 @@
 	String mem_id = (String) session.getAttribute("idKey");
 	System.out.println("mem_id=>" + mem_id);//계정명->null
 %>
-<html lang="en">
+<html lang="kr">
 <head>
 <meta charset="UTF-8">
 
@@ -409,76 +409,13 @@
 										d="M30.046 29.806l-7.127-7.287c2.109-2.395 3.397-5.558 3.397-9.021 0-3.721-1.486-7.094-3.896-9.56l0.003 0.003c-2.361-2.432-5.661-3.942-9.313-3.942s-6.953 1.51-9.31 3.939l-0.003 0.003c-2.388 2.462-3.86 5.824-3.86 9.53s1.472 7.068 3.863 9.533l-0.003-0.003c2.35 2.441 5.645 3.958 9.295 3.958 2.992 0 5.747-1.020 7.935-2.73l-0.028 0.021 7.207 7.383c0.232 0.225 0.548 0.364 0.896 0.368h0.001c0.344-0.001 0.656-0.142 0.881-0.368l0-0c0.252-0.237 0.409-0.573 0.409-0.945 0-0.34-0.131-0.65-0.345-0.881l0.001 0.001zM20.709 21.189c-1.906 1.978-4.577 3.206-7.536 3.206s-5.63-1.228-7.532-3.203l-0.003-0.003c-1.932-1.992-3.123-4.713-3.123-7.712s1.191-5.719 3.126-7.715l-0.003 0.003c1.906-1.978 4.577-3.206 7.536-3.206s5.63 1.228 7.532 3.203l0.003 0.003c1.932 1.992 3.123 4.713 3.123 7.712s-1.191 5.719-3.126 7.715l0.003-0.003z"></path></svg></span></a>
 						</div>
 						<div class="nav-item d-none d-md-flex">
-							<a class="nav-link notification-toggle has-notification" href="#"
-								id="dropdownUsernotifications" data-toggle="dropdown"
+							<a class="nav-link notification-toggle has-notification" href="/WaterMelon/notice.water"
 								aria-haspopup="true" aria-expanded="false"><span
 								class="adonis-icon notification icon-4x"><svg
 										version="1.1" xmlns="http://www.w3.org/2000/svg" height="24"
 										viewBox="0 0 29 32"> <path
 										d="M19.286 25.607c-0.395 0-0.714 0.32-0.714 0.714v0 0c0 2.367-1.919 4.286-4.286 4.286s-4.286-1.919-4.286-4.286v0 0c0-0.395-0.32-0.714-0.714-0.714s-0.714 0.32-0.714 0.714v0 0c0 3.156 2.558 5.714 5.714 5.714s5.714-2.558 5.714-5.714v0 0c0-0.395-0.32-0.714-0.714-0.714v0zM27.857 23.464h-2.857v-9.179c0-5.917-4.797-10.714-10.714-10.714s-10.714 4.797-10.714 10.714v0 9.214h-2.857c-0.395 0-0.714 0.32-0.714 0.714s0.32 0.714 0.714 0.714v0h27.143c0.395 0 0.714-0.32 0.714-0.714s-0.32-0.714-0.714-0.714v0zM23.571 23.464h-18.571v-9.221c0.024-5.11 4.172-9.243 9.286-9.243 0 0 0 0 0 0v0c5.128 0 9.286 4.157 9.286 9.286v0zM14.286 2.857c0.789 0 1.429-0.64 1.429-1.429v0c0-0.789-0.64-1.429-1.429-1.429s-1.429 0.64-1.429 1.429v0c0 0.789 0.64 1.429 1.429 1.429v0z"></path></svg></span></a>
-							<div
-								class="dropdown-menu dropdown-menu-right p-4 notifications clearfix"
-								role="menu">
-								<h5>Notification</h5>
-								<div class="media notification">
-									<div class="user-thumb mr-3 rounded-thumb">
-										<img src="../assets/images/browse/browse-overview-6.jpg"
-											alt="">
-									</div>
-									<div class="notification-desc">
-										<p>
-											New Album from <a href="#" class="active-color">Brenda
-												Lee</a>
-										</p>
-										<p>
-											<a href="#">Catch Me Outside</a>
-										</p>
-										<em class="inactive-color">2 Hours ago</em> <span
-											class="adonis-icon close-notification icon-1x"><svg
-												xmlns="http://www.w3.org/2000/svg" version="1.1" height="12"
-												viewBox="0 0 24 24"> <path
-												d="M13.4 12l5.3-5.3c0.4-0.4 0.4-1 0-1.4s-1-0.4-1.4 0l-5.3 5.3-5.3-5.3c-0.4-0.4-1-0.4-1.4 0s-0.4 1 0 1.4l5.3 5.3-5.3 5.3c-0.4 0.4-0.4 1 0 1.4 0.2 0.2 0.4 0.3 0.7 0.3s0.5-0.1 0.7-0.3l5.3-5.3 5.3 5.3c0.2 0.2 0.5 0.3 0.7 0.3s0.5-0.1 0.7-0.3c0.4-0.4 0.4-1 0-1.4l-5.3-5.3z" /></svg></span>
-									</div>
-								</div>
-								<div class="media notification">
-									<div class="user-thumb mr-3 rounded-thumb">
-										<img src="../assets/images/playlists/playlist-15.jpg" alt="">
-									</div>
-									<div class="notification-desc">
-										<p>
-											New Album from <a href="#" class="active-color">Adm Smith</a>
-										</p>
-										<p>
-											<a href="#">Catch Me Outside</a>
-										</p>
-										<em class="inactive-color">3 Hours ago</em> <span
-											class="adonis-icon close-notification icon-1x"><svg
-												xmlns="http://www.w3.org/2000/svg" version="1.1" height="12"
-												viewBox="0 0 24 24"> <path
-												d="M13.4 12l5.3-5.3c0.4-0.4 0.4-1 0-1.4s-1-0.4-1.4 0l-5.3 5.3-5.3-5.3c-0.4-0.4-1-0.4-1.4 0s-0.4 1 0 1.4l5.3 5.3-5.3 5.3c-0.4 0.4-0.4 1 0 1.4 0.2 0.2 0.4 0.3 0.7 0.3s0.5-0.1 0.7-0.3l5.3-5.3 5.3 5.3c0.2 0.2 0.5 0.3 0.7 0.3s0.5-0.1 0.7-0.3c0.4-0.4 0.4-1 0-1.4l-5.3-5.3z" /></svg></span>
-									</div>
-								</div>
-								<div class="media notification">
-									<div class="user-thumb mr-3 rounded-thumb">
-										<img src="../assets/images/browse/browse-overview-5.jpg"
-											alt="">
-									</div>
-									<div class="notification-desc">
-										<p>
-											New Album from <a href="#" class="active-color">Brenda
-												Lee</a>
-										</p>
-										<p>
-											<a href="#">Catch Me Outside</a>
-										</p>
-										<em class="inactive-color">5 Hours ago</em> <span
-											class="adonis-icon close-notification icon-1x"><svg
-												xmlns="http://www.w3.org/2000/svg" version="1.1" height="12"
-												viewBox="0 0 24 24"> <path
-												d="M13.4 12l5.3-5.3c0.4-0.4 0.4-1 0-1.4s-1-0.4-1.4 0l-5.3 5.3-5.3-5.3c-0.4-0.4-1-0.4-1.4 0s-0.4 1 0 1.4l5.3 5.3-5.3 5.3c-0.4 0.4-0.4 1 0 1.4 0.2 0.2 0.4 0.3 0.7 0.3s0.5-0.1 0.7-0.3l5.3-5.3 5.3 5.3c0.2 0.2 0.5 0.3 0.7 0.3s0.5-0.1 0.7-0.3c0.4-0.4 0.4-1 0-1.4l-5.3-5.3z" /></svg></span>
-									</div>
-								</div>
-							</div>
+							
 						</div>
 						<!-- 인증된 사람 이라면 -->
 						<%
@@ -581,7 +518,7 @@
 												class="adonis-icon notification mr-3 icon-3x"><svg
 														version="1.1" xmlns="http://www.w3.org/2000/svg"
 														viewBox="0 0 32 32"> <path
-														d="M10 6c0-3.314 2.686-6 6-6s6 2.686 6 6c0 3.314-2.686 6-6 6s-6-2.686-6-6zM24.002 14h-1.107l-6.222 12.633 2.327-11.633-3-3-3 3 2.327 11.633-6.222-12.633h-1.107c-3.998 0-3.998 2.687-3.998 6v10h24v-10c0-3.313 0-6-3.998-6z"></path></svg></span>Login</a></li>
+														d="M10 6c0-3.314 2.686-6 6-6s6 2.686 6 6c0 3.314-2.686 6-6 6s-6-2.686-6-6zM24.002 14h-1.107l-6.222 12.633 2.327-11.633-3-3-3 3 2.327 11.633-6.222-12.633h-1.107c-3.998 0-3.998 2.687-3.998 6v10h24v-10c0-3.313 0-6-3.998-6z"></path></svg></span>Login/Sign up</a></li>
 										<li><a href="#" class="inactive-color"><span
 												class="adonis-icon mr-3 icon-3x"><svg version="1.1"
 														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
