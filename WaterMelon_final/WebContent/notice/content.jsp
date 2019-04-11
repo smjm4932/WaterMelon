@@ -1,0 +1,112 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact V10</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main2.css">
+<!--===============================================================================================-->
+</head>
+<body>
+
+
+	<div class="container-contact100">
+
+		<div class="wrap-contact100">
+			<form class="contact100-form" action="../notice/notice.jsp">
+				<span class="contact100-form-title" style="font-weight:bold">
+					글 보기
+				</span>
+
+				<div class="wrap-input100 validate-input" data-validate="Please enter title">
+					<input class="input100" type="text" name="title" value="제목" disabled>
+				</div>
+				
+				<div class="wrap-input50 validate-input" data-validate="Please enter title" style="width:275px;">
+					<input class="input100" type="text" name="date" value="작성일" disabled>
+					
+				</div>
+				<div class="wrap-input50 validate-input" data-validate="Please enter title"  style="width:275px;">
+						<input class="input100" type="text" name="readcnt" value="조회수" disabled>
+					</div>
+				
+			
+
+				<div class="wrap-input100 validate-input" data-validate = "Please enter content">
+					<textarea class="input100" name="content" value="내용" disabled style="margin-top: 0px; margin-bottom: 0px; height: 470px;"></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+
+
+				<div class="container-contact100-form-btn validate-input" style="margin-left:110px;" >
+					<button class="contact100-form-btn" style="margin-right:30px;">
+						<span>
+							<i class="fa fa-paper-plane-o m-r-6" aria-hidden="true"></i>
+							글 수정
+						</span>
+					</button>
+					<button type="submit" class="contact100-form-btn">
+						<span>
+							<i class="fa fa-paper-plane-o m-r-6" aria-hidden="true"></i>
+							글 목록
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+</body>
+</html>
